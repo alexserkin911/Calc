@@ -9,12 +9,13 @@
     <children>
         <AnchorPane prefHeight="600.0" prefWidth="400.0">
             <children>
-                <TextField alignment="CENTER_RIGHT" layoutX="28.0" layoutY="20.0" prefHeight="50.0" prefWidth="350.0"/>
-                <Button layoutX="225.0" layoutY="91.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="70.0"
+                <TextField fx:id="textField" alignment="CENTER_RIGHT" layoutX="28.0" layoutY="20.0" prefHeight="50.0" prefWidth="350.0"/>
+                <Button onAction="#addValue" layoutX="225.0" layoutY="91.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="70.0"
                         text="0"/>
-                <Button layoutX="307.0" layoutY="91.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="70.0"
+                <Button onAction="#addValue" layoutX="307.0" layoutY="91.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="70.0"
                         text="1"/>
-                <Button layoutX="307.0" layoutY="169.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="70.0"
+
+                <Button onAction="#convertToDec" layoutX="307.0" layoutY="169.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="70.0"
                         text="toDec"/>
             </children>
         </AnchorPane>
